@@ -2,7 +2,6 @@
 
 namespace RubberSearch
 {
-        //Me ajude a corrigir este arquivo        //Me ajude a corrigir este arquivo
     partial class Form1
     {
         /// <sumário>
@@ -12,7 +11,7 @@ namespace RubberSearch
         /// <sumário>
         /// Limpar os recursos que estão sendo usados.
         /// </sumário>
-        /// <param name = "disposing"> true se os recursos//Me ajude a corrigir este arquivo
+        /// <param name = "disposing"> true se os recursos
         private void InitializeComponent()
         {
             MaterialWinforms.Controls.MaterialRaisedButton materialRaisedButton2;
@@ -33,6 +32,7 @@ namespace RubberSearch
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.SuspendLayout();
+            this.Load += new System.EventHandler(this.Form1_Load);
             // 
             // materialRaisedButton2
             // 
@@ -200,7 +200,6 @@ namespace RubberSearch
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();

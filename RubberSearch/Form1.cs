@@ -18,14 +18,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
+using Directory = System.IO.Directory;
 
 namespace RubberSearch
 {
     public partial class Form1 : MaterialForm
     {
-        private readonly string indexDir = @"C:\RubberSearch\Index";
-        private readonly string dataDir = @"C:\RubberSearch\Data";
+        private static string exePath = AppDomain.CurrentDomain.BaseDirectory;
+        private string indexDir = Path.Combine(exePath, "Index");
+        private string dataDir = Path.Combine(exePath, "Data");
 
         public Form1()
         {
@@ -34,6 +35,7 @@ namespace RubberSearch
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.Blue700, Primary.Blue700, Accent.LightBlue200, TextShade.WHITE);
+            
 
         }
 
@@ -41,14 +43,12 @@ namespace RubberSearch
         {
             if (!System.IO.Directory.Exists(indexDir))
             {
-                // Se não existir, criar a pasta1
                 System.IO.Directory.CreateDirectory(indexDir);
             }
-
-            // Verificar se a pasta2 existe
+           
+      
             if (!System.IO.Directory.Exists(dataDir))
             {
-                // Se não existir, criar a pasta2
                 System.IO.Directory.CreateDirectory(dataDir);
             }
 
