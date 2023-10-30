@@ -17,8 +17,9 @@ namespace RubberSearch
         {
             MaterialWinforms.Controls.MaterialRaisedButton materialRaisedButton2;
             System.Drawing.Drawing2D.GraphicsPath graphicsPath1 = new System.Drawing.Drawing2D.GraphicsPath();
-            System.Drawing.Drawing2D.GraphicsPath graphicsPath2 = new System.Drawing.Drawing2D.GraphicsPath();
             System.Windows.Forms.Label label1;
+            System.Drawing.Drawing2D.GraphicsPath graphicsPath2 = new System.Drawing.Drawing2D.GraphicsPath();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.materialProgressBar1 = new MaterialWinforms.Controls.MaterialProgressBar();
             this.materialTextBox1 = new MaterialWinforms.Controls.MaterialTextBox();
             this.materialRaisedButton1 = new MaterialWinforms.Controls.MaterialRaisedButton();
@@ -40,6 +41,7 @@ namespace RubberSearch
             materialRaisedButton2.CausesValidation = false;
             materialRaisedButton2.Depth = 0;
             materialRaisedButton2.Elevation = 5;
+            materialRaisedButton2.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             materialRaisedButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             materialRaisedButton2.Location = new System.Drawing.Point(168, 26);
             materialRaisedButton2.MouseState = MaterialWinforms.MouseState.HOVER;
@@ -55,6 +57,21 @@ namespace RubberSearch
             materialRaisedButton2.UseMnemonic = false;
             materialRaisedButton2.UseVisualStyleBackColor = false;
             materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+            // 
+            // label1
+            // 
+            label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            label1.CausesValidation = false;
+            label1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.ForeColor = System.Drawing.Color.White;
+            label1.Image = global::RubberSearch.Properties.Resources.logo2;
+            label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            label1.Location = new System.Drawing.Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(166, 71);
+            label1.TabIndex = 8;
+            label1.Text = "RubberSearch";
+            label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // materialProgressBar1
             // 
@@ -99,6 +116,7 @@ namespace RubberSearch
             this.materialRaisedButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Elevation = 5;
+            this.materialRaisedButton1.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.materialRaisedButton1.Location = new System.Drawing.Point(632, 26);
             this.materialRaisedButton1.MouseState = MaterialWinforms.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
@@ -169,21 +187,6 @@ namespace RubberSearch
             this.listView1.View = System.Windows.Forms.View.List;
             this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // label1
-            // 
-            label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            label1.CausesValidation = false;
-            label1.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label1.ForeColor = System.Drawing.Color.White;
-            label1.Image = global::RubberSearch.Properties.Resources.logo2;
-            label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            label1.Location = new System.Drawing.Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(166, 71);
-            label1.TabIndex = 8;
-            label1.Text = "RubberSearch";
-            label1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            // 
             // Form1
             // 
             this.ClientSize = new System.Drawing.Size(718, 463);
@@ -193,6 +196,7 @@ namespace RubberSearch
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.materialTextBox1);
             this.Controls.Add(this.materialProgressBar1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
